@@ -1,0 +1,203 @@
+  @font-face{
+      font-family: asap-bd;
+      src: url("../fonts/Asap-Bold.otf") format("opentype");
+  }
+
+  @font-face{
+    font-family: asap-md;
+    src: url("../fonts/Asap-Medium.otf") format("opentype");
+}
+
+@font-face{
+    font-family: asap-rg;
+    src: url("../fonts/Asap-Regular.otf") format("opentype");
+}
+
+    body{
+      display: flex;
+    }
+    .wrapper{
+        display: flex;
+        height: 100vh;
+        flex-flow: row nowrap;
+        flex: 1;
+        align-items: center;
+    }
+
+  .container{
+    max-width: 400px;
+    background-color: #2b6082;
+    padding: 3% 2% 2% 2%;
+    flex-flow: column nowrap;
+    display: flex;
+    flex: 1;
+    box-shadow: 1px 1px 25px 1px #7c7c7c;
+  }
+
+  .spacing{
+    flex: 3;
+  }
+
+  .form-card{
+    /* justify-content: space-around; */
+    display: flex;
+    background-color: white;
+    padding: 1.8em;
+    border-top-width: 4px;
+    border-top-color: #a0dc47;
+    border-top-style: solid;
+    flex-direction: column;
+  }
+
+  .field-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label{
+    color: #2b6082;
+    font-weight: 600;
+    font-family: asap-md;
+    flex: 1;
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  .custom-select{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #8c8b95;
+    align-items: center;
+    /* padding: 0.15em; */
+  }
+
+  .custom-select span{
+    color: #8c8b95;
+    font-family: asap-rg, Arial;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    flex: 1;
+  }
+
+  .add-button{
+    background-color: transparent;
+    border: none;
+  }
+  .name{
+    color: #a0dc47;
+    font-size: 1.8em !important;
+    margin-right: 0.1em;
+  }
+
+  .with-button{
+    border: none !important;
+  }
+  .field{
+      padding: 0.5em;
+      border: none;
+      border: 1px solid #8c8b95;
+      color: #8c8b95;
+      flex: 1;
+      outline: none;
+  }
+
+  .submit{
+      background-color: #ed6648;
+      color: #ffffff;
+      padding: 0.5em 1em 0.5em 1em;
+      font-family: asap-rg;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      width: 40%;
+      margin: 0 0.4em 0 0.4em;
+      flex: 1;
+      flex-basis: 40%;
+  }
+
+  .field::-webkit-input-placeholder {
+    font-family: asap-rg, Arial;
+    font-size: 0.8em;
+    color: #8c8b95;
+  }
+  
+  .field:-ms-input-placeholder {
+    font-family: asap-rg, Arial;
+    font-size: 0.8em;
+    color: #8c8b95;
+  }
+  
+  .field:-moz-placeholder {
+    font-family: asap-rg, Arial;
+    font-size: 0.8em;
+    color: #8c8b95;
+  }
+  
+  .field::-moz-placeholder {
+    font-family: asap-rg, Arial;
+    font-size: 0.8em;
+    color: #8c8b95;
+  }
+  .buttons-container{
+    margin-top: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .icon-cancel, .icon-submit{
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  .icon-cancel{
+    background-color: #b0c0cd;
+    padding: 0.7em 0.7em 0.7em 0.7em;
+  }
+  .icon-submit{
+    background-color: #2aa3dc;
+    padding: 0.7em 0.7em 0.7em 0.7em;
+  }
+
+  .cancel-button{
+    background-color: #d0dce7;
+    flex: 2;
+  }
+  .primary-button{
+    background-color: #43b9e6;
+    flex: 2;
+  }
+  .cancel-button, .primary-button{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+    font-size: 0.8em;
+    padding: 0;
+  }
+  .cancel-button span, .primary-button span {
+    text-align: center;
+    width: 100%;
+    font-family: asap-rg;
+  }
+  .button-space{
+    flex: 1;
+  }
+
+.button-group{
+border: 1px solid #8c8b95;
+}
+.button-group button{
+  background-color: transparent;
+  border: none;
+}
+.button-group button i{
+  color: #8c8b95;
+  font-size: 0.7em !important;
+  padding: 0.1em 0.2em 0.1em 0.2em;
+}
+.fa-stop{
+  color: #efc183 !important;
+  border: 1px solid #8c8b95;
+}
+.grey{
+  background-color: #edf3f8;
+}
